@@ -112,7 +112,7 @@
               <li>
                 <a
                   href="#home"
-                    onclick="handelMenue()"
+                  onclick="handelMenue()"
                   class="nav-link font-bold text-[#333333] text-[15px] block p-5 border-1 border-gray-50 hover:bg-gray-400"
                   >HOME</a
                 >
@@ -398,7 +398,7 @@
         >
           <div class="col-span-1 row-span-1">
             <div
-              class="md:flex md:justify-center lg:justify-center md:items-center lg:items-center"
+              class="flex sm:justify-center sm:items-center md:flex md:justify-center lg:justify-center md:items-center lg:items-center"
             >
               <img
                 src="./assets/college-info-nepal-project-img.png"
@@ -451,7 +451,7 @@
         >
           <div class="col-span-1 row-span-1">
             <div
-              class="md:flex md:justify-center lg:justify-center md:items-center lg:items-center"
+              class="flex sm:justify-center sm:items-center md:flex md:justify-center lg:justify-center md:items-center lg:items-center"
             >
               <img
                 src="./assets/wallmart-project-img.png"
@@ -504,7 +504,7 @@
         >
           <div class="col-span-1 row-span-1">
             <div
-              class="flex sm:justify-center sm:items-center md:flex md:justify-center lg:justify-center md:items-center lg:items-center "
+              class="flex sm:justify-center sm:items-center md:flex md:justify-center lg:justify-center md:items-center lg:items-center"
             >
               <img
                 src="./assets/nicke-clone-project-img.png"
@@ -557,7 +557,7 @@
         >
           <div class="col-span-1 row-span-1">
             <div
-              class="md:flex md:justify-center lg:justify-center md:items-center lg:items-center"
+              class="flex sm:justify-center sm:items-center md:flex md:justify-center lg:justify-center md:items-center lg:items-center"
             >
               <img
                 src="./assets/college-info-nepal-project-img.png"
@@ -607,8 +607,9 @@
 
     <section id="contact" class="">
       <div
-        class="relative h-dvh md:h-[1040px] lg:h-[1100px] xl:h-[150vh] 2xl:h-[160vh] bg-[url('./assets/bg_image.svg')] bg-cover bg-center"
+        class="relative h-[950px] md:h-[1020px] lg:h-[1100px] xl:h-[1100px]  2xl:h-[145vh]   bg-[url('./assets/bg_image.svg')] bg-cover bg-center"
       >
+      <!-- h-dvh md:min-h-[80vh] lg:h-[1100px] xl:h-[150vh] sm:h-[1050px] 2xl:h-[160vh] -->
         <div
           class="absolute inset-0 bg-gradient-to-b from-gray-100/80 to-gray-100/80"
         >
@@ -629,13 +630,23 @@
             </p>
           </div>
 
+
+          <!-- h-[520px] w-[350px] md:w-[650px] lg:w-[700px] xl:w-[710px] md:h-[570px] lg:h-[600px] xl:h-[650px] flex flex-col justify-around -->
+
           <section class="flex justify-center items-center my-[50px]">
-            <div class="uppercase bg-white p-4 md:p-8 shadow-[0px_0px_10px_0px_rgba(100,100,111,0.2)] rounded-lg">
+            <div
+              class="uppercase bg-white p-4 md:p-8 shadow-[0px_0px_10px_0px_rgba(100,100,111,0.2)] rounded-lg h-[580px] w-[350px] md:w-[650px] lg:w-[750px] xl:w-[800px] md:h-[640px] lg:h-[650px] xl:h-[650px]"
+            >
               <form action="https://api.web3forms.com/submit" method="POST">
-                <input type="hidden" name="access_key" value="729e1bb7-ed98-4b50-beab-17353969cf27">
+                <input
+                  type="hidden"
+                  name="access_key"
+                  value="729e1bb7-ed98-4b50-beab-17353969cf27"
+                />
                 <div
-                  class="w-[350px] md:w-[650px] lg:w-[700px] xl:w-[710px] h-[520px] md:h-[570px] lg:h-[600px] xl:h-[650px] flex flex-col justify-around"
+                  class="space-y-8"
                 >
+                
                   <div class="flex flex-col gap-2">
                     <label
                       class="text-[#666666] text-[13px] font-bold"
@@ -674,17 +685,16 @@
                       name="message"
                       id=""
                       placeholder="Enter Your Message"
-                      
                     ></textarea>
                   </div>
-                  <a href="#" class="cursor-pointer">
+                  <div>
                     <button
-                      class="bg-[#7843e9] w-full md:w-fit md:float-end px-20 py-3  text-white text-[18px] xl:text-[18px] font-medium tracking-wideR rounded-md hover:translate-y-[-5px] duration-500 ease-in-out"
+                      class="bg-[#7843e9] w-full md:w-fit md:float-end px-20 py-3 text-white text-[18px] xl:text-[18px] font-medium tracking-wide rounded-md hover:translate-y-[-5px] duration-500 ease-in-out"
                       type="submit"
                     >
                       submit
                     </button>
-                  </a>
+                  </div>
                 </div>
               </form>
             </div>
@@ -693,63 +703,72 @@
       </div>
     </section>
 
-
-   
-    <footer class="bg-black p-4 md:p-8">
-      <div class=" flex flex-col  md:flex-row-reverse gap-8 pt-[25px] lg:pt-[45px] 2xl:mx-[150px]">
-         <div class=" text-white flex flex-col gap-4 xl:gap-7">
-           <h3
-                class="text-white text-xl font-bold tracking-wide  uppercase"
-              >
-                Social
-              </h3>
-          <ul class="flex gap-3 text-2xl">
-            <li> <a
-                href="https://www.linkedin.com/in/abhishek-kumar-shah-811420230/"
-              >
-                <i class='bx bxl-linkedin'></i>
-              </a></li>
+    <section class="">
+      <footer class="bg-black w-full p-4 md:p-0">
+        <div
+          class="flex flex-col md:flex-row-reverse gap-8 p-8 pt-[25px] lg:pt-[75px] 2xl:mx-[120px]"
+        >
+          <div class="text-white flex flex-col gap-4 xl:gap-7">
+            <h3 class="text-white text-xl font-bold tracking-wide uppercase">
+              Social
+            </h3>
+            <ul class="flex gap-3 text-2xl">
               <li>
-                 <a href="https://x.com/shahabhishek513">
-                <i class="bx bxl-twitter"></i>
-              </a>
+                <a
+                  href="https://www.linkedin.com/in/abhishek-kumar-shah-811420230/"
+                >
+                  <i class="bx bxl-linkedin"></i>
+                </a>
               </li>
               <li>
-                 <a href="https://www.facebook.com/profile.php?id=100008886937692">
-                <i class="bx bxl-facebook-square"></i>
-              </a>
+                <a href="https://x.com/shahabhishek513">
+                  <i class="bx bxl-twitter"></i>
+                </a>
               </li>
               <li>
-                 <a href="https://www.instagram.com/avishek_saa/">
-                <i class="bx bxl-instagram-alt"></i>
-              </a>
+                <a
+                  href="https://www.facebook.com/profile.php?id=100008886937692"
+                >
+                  <i class="bx bxl-facebook-square"></i>
+                </a>
               </li>
               <li>
-                 <a href="https://github.com/Avishekccc">
-                <i class="bx bxl-github"></i>
-              </a>
+                <a href="https://www.instagram.com/avishek_saa/">
+                  <i class="bx bxl-instagram-alt"></i>
+                </a>
               </li>
-          </ul>
+              <li>
+                <a href="https://github.com/Avishekccc">
+                  <i class="bx bxl-github"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="text-white flex flex-col gap-4 xl:gap-7">
+            <h3 class="text-xl font-bold tracking-wide uppercase">
+              Avishek kumar shah
+            </h3>
+            <div class="md:pr-16 lg:pr-[400px] xl:pr-[550px] 2xl:pr-[490px]">
+              <p class="text-[12px] 2xl:text-[14px] leading-6">
+                A Frontend focused Web Developer building the Frontend of
+                Websites and Web Applications that leads to the success of the
+                overall product
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="text-white flex flex-col gap-4 xl:gap-7">
-            <h3
-                class=" text-xl font-bold tracking-wide  uppercase"
-              >
-                Avishek kumar shah
-              </h3>
-              <div class="md:pr-16 lg:pr-[400px] xl:pr-[550px] 2xl:pr-[490px]">
-                <p class="text-[12px] 2xl:text-[14px] leading-6">
-            A Frontend focused Web Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product
+        <div
+          class="text-white text-[12px] p-4 text-center mt-[50px] md:pb-[40px] md:pt-[35px] md:border-t-[1px] md:border-[#444444] 2xl:mx-[150px]"
+        >
+          <p>
+            &#169; 2025. Made by
+            <span class="uppercase font-bold underline"
+              ><a href="#">Avishek Kumar Shah</a></span
+            >
           </p>
-              </div>
-          
         </div>
-      </div>
-      <div class="text-white text-[12px] text-center mt-[100px] md:pb-[0px] lg:m md:border-t-[1px] md:border-[#444444] md:pt-[35px] 2xl:mx-[150px]">
-        <p>	&#169; 2025. Made by <span class="uppercase font-bold underline"><a href="#">Avishek Kumar Shah</a></span>
-        </p>
-      </div>
-    </footer>
+      </footer>
+    </section>
 
     <script src="script.js"></script>
   </body>
