@@ -3,6 +3,7 @@ function handelMenue() {
   navDialouge.classList.toggle("hidden");
 }
 
+ AOS.init();
 
 document.querySelectorAll(".nav-link").forEach((link) => {
   link.addEventListener("click", function (e) {
